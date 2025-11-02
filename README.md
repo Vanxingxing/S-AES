@@ -46,13 +46,13 @@ GUI 窗口分为 4 个核心区域，操作逻辑清晰：
 结果输出区 | 底部         | 输出加密或解密结果  
 # 代码结构解析  
     # 核心类与方法
-SAES.java
-    public static int encrypt(int plain, int key)     // 16位数据块加密
-    public static int decrypt(int cipher, int key)    // 16位数据块解密
-    private static int subBytes(int state)            // 字节替换
-    private static int shiftRows(int state)           // 行移位
-    private static int mixColumns(int state)          // 列混淆
-    private static int addRoundKey(int state, int key) // 轮密钥加
+SAES.java 
+    public static int encrypt(int plain, int key)     // 16位数据块加密 
+    public static int decrypt(int cipher, int key)    // 16位数据块解密 
+    private static int subBytes(int state)            // 字节替换 
+    private static int shiftRows(int state)           // 行移位 
+    private static int mixColumns(int state)          // 列混淆 
+    private static int addRoundKey(int state, int key) // 轮密钥加 
     private static int keyExpansion(int key)          // 密钥扩展
 
 StringHandler.java
